@@ -106,5 +106,6 @@ public class OrderPo extends BasePo
 	{
 		this.totalNum = totalNum;
 	}
+	
 
 }
