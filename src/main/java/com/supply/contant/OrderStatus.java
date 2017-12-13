@@ -1,5 +1,11 @@
 package com.supply.contant;
 
+
+/**
+ * 订单状态
+ * @author ly
+ *
+ */
 public enum OrderStatus
 {
 	STATUS_NONE,
