@@ -68,5 +68,4 @@ public class OrderDetailPo extends BasePo
 		this.productUnit = productUnit;
 	}
 	
-	
 }
