@@ -1,5 +1,6 @@
 package com.supply.entity.po;
 
+import java.math.BigDecimal;
 import java.sql.Timestamp;
 
 import com.supply.contant.UserType;
@@ -23,6 +24,7 @@ public class UserPo extends BasePo
 	private int sex;
 	private boolean isOnline;
 	private UserType userType;
+	private BigDecimal balance;
 	private String loginIp;
 	private String loginMac;
 	private Timestamp loginTime;
@@ -129,6 +131,14 @@ public class UserPo extends BasePo
 	public void setLoginTime(Timestamp loginTime)
 	{
 		this.loginTime = loginTime;
+	}
+	public BigDecimal getBalance()
+	{
+		return balance;
+	}
+	public void setBalance(BigDecimal balance)
+	{
+		this.balance = balance;
 	}
 	
 	
