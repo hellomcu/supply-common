@@ -1,5 +1,7 @@
 package com.supply.entity.po;
 
+import java.math.BigDecimal;
+
 import com.supply.entity.base.BasePo;
 
 public class StorePo extends BasePo
@@ -12,13 +14,13 @@ public class StorePo extends BasePo
 	 */
 	private static final long serialVersionUID = -932709462221273061L;
 	
-	private long id;
 	private String storeName;
 	private String storePlace;
 	private String contacts;
 	private String contactWay;
 	private String description;
 	private int storeType;
+	private BigDecimal balance;
 	public long getId()
 	{
 		return id;
@@ -75,6 +77,14 @@ public class StorePo extends BasePo
 	public void setStoreType(int storeType)
 	{
 		this.storeType = storeType;
+	}
+	public BigDecimal getBalance()
+	{
+		return balance;
+	}
+	public void setBalance(BigDecimal balance)
+	{
+		this.balance = balance;
 	}
 	
 	
