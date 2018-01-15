@@ -8,10 +8,9 @@
 	</parent>
 	<artifactId>supply-common</artifactId>
 	<name>supply-common</name>
-
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
-		
+
 
 
 		<dependency>
