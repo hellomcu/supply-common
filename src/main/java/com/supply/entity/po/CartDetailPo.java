@@ -7,11 +7,11 @@ import com.supply.entity.base.BasePo;
 public class CartDetailPo extends BasePo
 {
 
+
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 8328159565435399163L;
-
+	private static final long serialVersionUID = -3432523962522621732L;
 	private long cartId;
 	private long productId;
 	private String productName;

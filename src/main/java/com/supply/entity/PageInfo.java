@@ -95,4 +95,5 @@ public class PageInfo<T> extends BaseEntity
 		return Math.round(Math.ceil(totalNum / (double) itemNum));
 	}
 
+	
 }

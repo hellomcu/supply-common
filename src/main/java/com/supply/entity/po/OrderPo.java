@@ -20,8 +20,8 @@ public class OrderPo extends BasePo
 	private int productNum;
 	private int totalNum;
 	private String receivingAddress;
+	private String receiver;
 	private String contacts;
-	private String contactWay;
 	private OrderStatus orderStatus;
 	private String orderRemark;
 	private String storeName;
@@ -67,14 +67,6 @@ public class OrderPo extends BasePo
 	{
 		this.contacts = contacts;
 	}
-	public String getContactWay()
-	{
-		return contactWay;
-	}
-	public void setContactWay(String contactWay)
-	{
-		this.contactWay = contactWay;
-	}
 	public OrderStatus getOrderStatus()
 	{
 		return orderStatus;
@@ -114,6 +106,14 @@ public class OrderPo extends BasePo
 	public void setDetails(List<ProductPo> details)
 	{
 		this.details = details;
+	}
+	public String getReceiver()
+	{
+		return receiver;
+	}
+	public void setReceiver(String receiver)
+	{
+		this.receiver = receiver;
 	}
 	
 
