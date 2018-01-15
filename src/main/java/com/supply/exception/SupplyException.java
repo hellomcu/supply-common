@@ -35,12 +35,22 @@ public class SupplyException extends RuntimeException
 	public SupplyException(String message, int code)
 	{
 		super(message);
-		this.code = code;
+		this.setCode(code);
 	}
 
 	public SupplyException(Throwable cause)
 	{
 		super(cause);
+	}
+
+	public int getCode()
+	{
+		return code;
+	}
+
+	public void setCode(int code)
+	{
+		this.code = code;
 	}
 
 
