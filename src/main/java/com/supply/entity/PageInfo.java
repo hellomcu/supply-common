@@ -1,5 +1,6 @@
 package com.supply.entity;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 import com.supply.entity.base.BaseEntity;
@@ -19,6 +20,8 @@ public class PageInfo<T> extends BaseEntity
 	private int itemNum = 20;
 	// 总记录数
 	private long totalNum;
+	//总价格
+	private BigDecimal totalPrice;
 	private List<T> list;
 
 	/**
@@ -93,6 +96,16 @@ public class PageInfo<T> extends BaseEntity
 			return 0L;
 		}
 		return Math.round(Math.ceil(totalNum / (double) itemNum));
+	}
+
+	public BigDecimal getTotalPrice()
+	{
+		return totalPrice;
+	}
+
+	public void setTotalPrice(BigDecimal totalPrice)
+	{
+		this.totalPrice = totalPrice;
 	}
 
 	
