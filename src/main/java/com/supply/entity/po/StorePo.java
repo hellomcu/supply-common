@@ -21,7 +21,8 @@ public class StorePo extends BasePo
 	private BigDecimal balance;
 	private String description;
 	private int storeType;
-
+	private BigDecimal orderTotalPrice;
+	
 	public long getId()
 	{
 		return id;
@@ -86,6 +87,14 @@ public class StorePo extends BasePo
 	public void setBalance(BigDecimal balance)
 	{
 		this.balance = balance;
+	}
+	public BigDecimal getOrderTotalPrice()
+	{
+		return orderTotalPrice;
+	}
+	public void setOrderTotalPrice(BigDecimal orderTotalPrice)
+	{
+		this.orderTotalPrice = orderTotalPrice;
 	}
 	
 	
