@@ -17,6 +17,7 @@ public class ProductPo extends BasePo
 	private int totalNum;
 	private int productNum;
 	private BigDecimal productPrice;
+	private BigDecimal salePrice;
 	private String productUnit;
 	private String productPlace;
 	private Date productDate;
@@ -138,6 +139,14 @@ public class ProductPo extends BasePo
 	public void setProductUnit(String productUnit)
 	{
 		this.productUnit = productUnit;
+	}
+	public BigDecimal getSalePrice()
+	{
+		return salePrice;
+	}
+	public void setSalePrice(BigDecimal salePrice)
+	{
+		this.salePrice = salePrice;
 	}
 	
 	
